@@ -1,0 +1,155 @@
+body{
+    background: #75bff0;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 150px;
+
+}
+.container{
+    background: white;
+    padding: 25px;
+    width: 500px;
+    border-radius:15px;
+}
+.name{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    justify-content: center;
+}
+.name h2{
+    padding-right: 10px;
+}
+.todo-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(230, 227, 227);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.todo-body input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+.todo-body img {
+    cursor: pointer;
+    border-radius: 40px;
+    height: 30px;
+    width: 30px;
+    padding: 15px;
+    background: limegreen;
+}
+
+.notify{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+    color: green;
+    font-weight: 600;
+    font-size: 20px;  
+}
+
+.list-items{
+    max-height: 300px;
+    overflow-y:scroll ;
+ }
+
+ul{
+    padding: 0;
+}
+li {
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(230, 227, 227);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.todo-controls {
+    width: 25px;
+    height: 25px;
+    padding-top: 5px;
+    margin-right: 5px;
+}
+
+.edit{
+    padding-right: 20px;
+}
+
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+.modal-content p {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.modal-content input {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid rgb(182, 181, 181);
+    border-radius: 6px;
+    outline: none;
+}
+.modal-content button {
+    padding: 8px 14px;
+    margin: 0 10px;
+    border: 1px solid rgb(182, 181, 181);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button1{
+    background: green;
+    color: white;
+}
+.button1:hover{
+    background: limegreen;
+    transition: background 0.9s ease;
+}
+
+.button2{
+    background: red;
+    color: white;
+}
+.button2:hover{
+    background: rgb(245, 63, 63);
+    transition: background 0.9s ease;
+}
