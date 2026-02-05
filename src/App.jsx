@@ -44,9 +44,12 @@ function App() {
     if (!editText.trim()) return;
 
     setTodoItems((prev) =>
-      prev.map((item) =>
-        item.id === currentTodo.id ? { ...item, text: editText } : item,
-      ),
+      prev.map((item) => {
+        if (item.id === currentTodo.id) {
+          return { ...item, text: editText };
+        }
+        return item;
+      }),
     );
 
     closeEditModal();
